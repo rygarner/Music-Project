@@ -13,13 +13,14 @@ body {
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/millenniumparade.jpg");
+  background-position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   text-align: center;
   padding: 200px;
   filter: brightness(115%);
-  box-shadow: 0px 0px 90px 50px rgba(0, 0, 0, 1) inset;
+  box-shadow: 0px 0px 90px 90px rgba(0, 0, 0, 1) inset;
   margin-bottom: 50px;
 }
 header h1 {
@@ -49,6 +50,7 @@ header a {
 }
 main {
   padding-top: 50px;
+  margin-bottom: 50px;
 }
 
 .summary {
@@ -56,6 +58,7 @@ main {
   align-items: center;
   grid-template-columns: 1fr 1fr;
   column-gap: 50px;
+  margin-bottom: 50px;
 }
 .summary img {
   border-radius: 30px;
@@ -82,24 +85,26 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
-p {
+.pg-1,
+.pg-2 {
   font-size: 18px;
 }
 .tracks {
-  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .tracks-header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/Trepanation\ Cover.PNG");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 75px;
+  padding: 100px;
   filter: brightness(115%);
-  box-shadow: 0px 0px 90px 50px rgba(0, 0, 0, 1) inset;
+  box-shadow: 0px 0px 90px 100px rgba(0, 0, 0, 1) inset;
   margin-bottom: 50px;
-  font-size: 96px;
+  font-size: 72px;
 }
 .spotify {
   display: grid;
@@ -111,15 +116,16 @@ p {
 .video-header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/Veil.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 75px;
+  padding: 100px;
   filter: brightness(115%);
-  box-shadow: 0px 0px 90px 50px rgba(0, 0, 0, 1) inset;
+  box-shadow: 0px 0px 90px 100px rgba(0, 0, 0, 1) inset;
   margin-bottom: 50px;
-  font-size: 96px;
+  font-size: 72px;
 }
 .video-row {
   display: grid;
@@ -132,5 +138,44 @@ p {
 .youtube {
   width: 100%;
   aspect-ratio: 21/9;
-  border-radius: 16px;
+  border-radius: 30px;
+}
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.4)),
+    url("../images/Belle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 90px 75px rgba(0, 0, 0, 1) inset;
+  margin-bottom: 50px;
+  padding: 50px;
+}
+footer h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+footer a {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.5;
+  color: cadetblue;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px;
 }
