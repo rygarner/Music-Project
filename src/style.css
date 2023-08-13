@@ -2,9 +2,12 @@
   font-family: squealer;
   src: url("../fonts/fff.ttf");
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
 }
 .hero {
   max-width: 1400px;
@@ -42,12 +45,11 @@ header h1 {
 .button {
   background-image: linear-gradient(144deg, #ffaaaa, #fde69a 50%, #eb003b);
   border: 0;
-  border-radius: 8px;
+  border-radius: 20px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
   display: inline-flex;
   font-size: 20px;
   margin: 30px;
-  line-height: 1em;
   padding: 3px;
   cursor: pointer;
   text-decoration: none;
@@ -62,7 +64,7 @@ header h1 {
 .button span {
   background-color: rgb(45, 5, 5);
   padding: 16px 24px;
-  border-radius: 6px;
+  border-radius: 22px;
   transition: 300ms;
 }
 
@@ -140,6 +142,7 @@ main {
 }
 .synopsis img {
   border-radius: 30px;
+  margin: 0 auto;
 }
 .synopsis .container-2 {
   background: rgba(0, 0, 0, 0.69);
@@ -176,6 +179,46 @@ img {
 .pg-2 {
   font-size: 18px;
 }
+.creative-collective {
+  margin-bottom: 70px;
+}
+table,
+th,
+td {
+  border: none;
+  border-collapse: collapse;
+}
+.table {
+  width: 100%;
+}
+td:last-child {
+  width: 33%;
+}
+.creative-collective {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collaborators {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.collaborators img {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 60px;
+  padding-bottom: 40px;
+}
+.name {
+  text-align: center;
+  font-size: 24px;
+}
+
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -221,6 +264,9 @@ img {
     10px -10px 0 rgb(-216, -2, 0), 11px -11px 10px rgba(0, 0, 0, 0.8),
     11px -11px 1px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
+.videos {
+  margin-bottom: 70px;
+}
 .video-header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/Veil.jpg");
@@ -257,6 +303,7 @@ img {
   aspect-ratio: 16/9;
   border-radius: 30px;
 }
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.4)),
     url("../images/Belle.png");
@@ -306,4 +353,41 @@ footer a {
   display: flex;
   width: 40%;
   margin: 0 auto;
+}
+.top {
+  display: block;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  header h1 {
+    font-size: 56px;
+  }
+  .button {
+    font-size: 14px;
+  }
+  .button span {
+    padding: 12px 20px;
+  }
+  .synopsis {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .collaborators {
+    overflow-x: auto;
+  }
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 75%;
+  }
+  .video-row {
+    grid-template-columns: 1fr;
+
+    margin: 0 auto;
+    width: 75%;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+  }
 }
