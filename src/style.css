@@ -179,9 +179,7 @@ img {
 .pg-2 {
   font-size: 18px;
 }
-.creative-collective {
-  margin-bottom: 70px;
-}
+
 table,
 th,
 td {
@@ -190,29 +188,39 @@ td {
 }
 .table {
   width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: center;
 }
+
 td:last-child {
   width: 33%;
 }
 .creative-collective {
+  margin-bottom: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .collaborators {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  max-width: 100%;
 }
 
 .collaborators img {
-  max-width: 300px;
+  max-width: 75%;
   height: auto;
   display: block;
   margin: 0 auto;
-  padding: 60px;
-  padding-bottom: 40px;
+  border-radius: none;
+  padding: 10px;
 }
 .name {
   text-align: center;
@@ -374,7 +382,7 @@ footer a {
     justify-items: center;
   }
   .collaborators {
-    overflow-x: auto;
+    overflow-x: hidden;
   }
   .grid-3-columns {
     grid-template-columns: 1fr;
