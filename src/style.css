@@ -365,6 +365,7 @@ footer a {
 .top {
   display: block;
   text-align: right;
+  transform: translate(-20px, -40px);
 }
 
 @media (max-width: 600px) {
@@ -393,6 +394,77 @@ footer a {
   }
   .glitch-wrapper {
     padding: 40px;
+    font-size: 24px;
+  }
+  main {
+    padding: 30px;
+  }
+  .synopsis {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .synopsis img {
+    display: none;
+  }
+  .synopsis .container-2 h1 {
+    font-size: 24px;
+    margin: 0 auto;
+  }
+  .synopsis .container-2 h3 {
+    margin: 0 auto;
+    font-size: 24px;
+  }
+  img {
+    max-width: 75%;
+    max-height: 75%;
+  }
+  .name {
+    font-size: 12px;
+  }
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 50%;
+  }
+  .video-row {
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0 auto;
+    width: 50%;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    margin: 0 auto;
+  }
+  header {
+    padding: 75px 0px;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+  .hero {
+    max-width: 1024px;
+  }
+
+  header h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .button {
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  .button span {
+    padding: 12px 15px;
+  }
+  .glitch-wrapper {
+    padding: 40px 30px;
     font-size: 24px;
   }
   main {
