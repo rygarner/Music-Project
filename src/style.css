@@ -368,6 +368,9 @@ footer a {
 }
 
 @media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
   header h1 {
     font-size: 56px;
   }
